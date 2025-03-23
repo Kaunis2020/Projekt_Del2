@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Larissa. ÖPPNA DENNA DEL I LIVE SERVER,annars fungerar inte COOKIES. -->
+<html lang="sv">
+    <head>
+        <title>Registrera konto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/register.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-sm bg-primary"> 
+                <div class="dropdown">
+                    <a id="menubutton" class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <b> Maträtter </b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="blockquote mb-0"><a class="dropdown-item" href="nonvegan.html"><b>Icke-vegansk<</b></a></li>
+                        <li class="blockquote mb-0"><a class="dropdown-item" href="vegan.html"><b>Vegansk mat</b></a></li>
+                        <li class="blockquote mb-0"><a class="dropdown-item" href="hot.html"><b>Varma drycker</b></a></li>
+                        <li class="blockquote mb-0"><a class="dropdown-item" href="cold.html"><b>Kalla drycker</b></a></li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-white" href ="userpage.html"><b> Egen sida </b></a></li>
+                    <li class="nav-item"><a class="nav-link text-white ownactive" href ="#"><b> Registrera </b></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href ="javascript:LogOut();"><b> Logga ut </b></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href ="users.html"><b> Användare </b></a></li>
+                </ul>
+            </nav>                  
+            <h1>Registrera konto</h1>
+            <br/>
+            <p>För att lägga in nya poster i databasen samt för att<br/>
+                radera och uppdatera alla poster i databasen måste<br/> 
+                Du registrera Dig med användarnamn och lösenord.</p>
+            <p>Fyll i formuläret nedan och klicka på knappen "Skicka".</p>
+            <br/>
+            <p id="message"></p>
+            <br/>
+            <form>
+                <div class="w-75 p-3">
+                    <label for="fname" class="form-label">Förnamn</label> 
+                    <input type="text" class="form-control" id="fname" name="fname" required>                    
+                </div>
+                <div class="w-75 p-3">
+                    <label for="lname" class="form-label">Efternamn</label> 
+                    <input type="text" class="form-control" id="lname" name="lname" required>                    
+                </div>
+                <div class="w-75 p-3">
+                    <label for="email" class="form-label">E-post</label> 
+                    <input type="text" class="form-control" id="email" name="email" required>                    
+                </div>
+                <div class="w-75 p-3">
+                    <label for="username" class="form-label">Användarnamn, minst 5 tecken</label> 
+                    <input type="text" class="form-control" id="username" name="username" minlength="5" maxlength="12" required>                    
+                </div>
+                <div class="w-75 p-3">
+                    <label for="password" class="form-label">Lösenord, minst 6 tecken</label> 
+                    <input type="text" class="form-control" id="password" name="password" minlength="6" maxlength="20" required>                    
+                </div>
+                <br/>
+                <div class="w-75 p-3 text-center">
+                    <button type="button" class="btn btn-primary" onclick="Register();"><b> Skicka </b></button>
+                </div>     
+            </form>
+            <br/>
+            <br/>
+        </div>
+    </body>
+</html>

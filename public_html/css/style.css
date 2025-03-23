@@ -1,0 +1,176 @@
+/* 
+    Created on : 15 jan. 2025, 20:39:32
+    Author     : Larissa
+*/
+.ownactive{
+    border: 5px solid red;
+}
+
+#addbtn a{
+    border: solid blue;
+    color:blue;
+    border-radius: 25px;
+}
+
+a:active{
+    background-color: rgb(240, 248, 255) !important;
+}
+
+#heading{
+    letter-spacing: .2rem;
+}
+
+#trash{
+    font-size:40px;
+    color:red;
+}
+
+#edit{
+    font-size:40px;
+    color:green;
+}
+
+.clickme{
+    color:blue;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size:20px;
+    text-decoration: underline;
+}
+
+figure {
+    display: inline-block;
+    border: none;
+    margin:auto; /* adjust as needed */
+    margin-top: 0px;
+}
+figure img {
+    vertical-align: top;
+    margin-left:25px;
+}
+
+figure figcaption {
+    padding-top:10px;
+    margin-left:0;
+    padding-left:0;
+    border: none;
+    text-align: left;
+    font-family: Arial;
+    font-size:26px;
+    color:blue;
+    font-weight: bolder;
+    margin:auto;
+}
+
+#slidshowdiv{
+    width: 20%;
+    margin:auto;
+    margin-top:25px;
+}
+
+#usertable{
+    width:70%;
+    margin:auto;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#usertable td{
+    text-align:left;
+}
+
+#edittable{
+    width: 95%;
+    margin:auto;
+}
+
+#edittable th{
+    width:4%;
+    padding-right:10px;
+}
+
+.longname{
+    width:70%;
+}
+
+#ingredients, #description, #info{
+    width:90%;
+}
+
+#itemtable{
+    width: 95%;
+    margin:auto;
+}
+
+#itemtable td, #itemtable th {
+    padding:3px;
+}
+
+#displaytable{
+    width: 95%;
+    margin:auto;
+}
+
+#displaytable th, td{
+    text-align: center;
+}
+
+#letter{
+    width:40%;
+}
+
+#displaytable td{
+    padding:15px;
+}
+
+#displaytable caption, #edittable caption{
+    text-align: center;
+    caption-side: top;
+    margin-bottom:20px;
+    font-size: 20px;
+}
+
+#message {
+    color: red;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.editbtn{
+    background-color: transparent;
+    border:none;
+    width:7%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input:read-only {
+    background-color: #e5e4e2;
+    border: 0;
+}
+
+[readonly]:focus{
+    background-color: #e5e4e2;
+    border: 0;
+}
+
+nav{
+    margin-bottom:25px;
+}
+
+li.nav-item{
+    padding-right:40px;
+    font-size:20px;
+}
+
+#menubutton{
+    margin-left:20px;
+    padding-right:40px;
+    font-size:22px;
+}
+
+#logout{
+    font-size: 20px;
+    font-weight: bolder;
+}
